@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  background-color: #3d3d3d;
+  color: #ffffff;
+  font-family: Montserrat;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 9px 32px 0px 32px;
+}
+
+.header-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  margin: auto 0;
+  height: 100%;
+}
+
+.main-banner {
+  min-height: 375px;
+  margin-top: 10px;
+  background-image: url("../img/cetepe-banner.svg");
+  background-size: cover;
+  background-position: center 100%;
+}
+
+#align-center {
+  max-width: 1280px;
+  margin: 9px 32px;
+}
+
+#align-center {
+  max-width: 1280px;
+  margin: 9px 32px;
+}
+
+.section {
+  margin: 72px 0px 68px 0px;
+}
+
+.section-title {
+  display: flex;
+}
+
+.section-title h3 {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-shadow: 0px 4px 30px #00ed6b;
+}
+
+.section-title img {
+  margin-left: 18px;
+}
+
+.section-description {
+  margin: 0px;
+  margin-top: 23px;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 27px;
+  margin-top: 23px;
+}
+
+.section--bold {
+  font-weight: bold;
+}
+
+.container-we-are-different h3 {
+  width: 188px;
+}
+
+.container-why-add h3 {
+  width: 200px;
+}
+
+.section--faq {
+  margin-bottom: 180px;
+}
+
+.section--faq-question {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.faq-wrapper .section-description {
+  font-size: 20px;
+}
+
+.before-footer-fade {
+  height: 3px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(255, 255, 255, 0.157292) 57.29%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(
+      97.31deg,
+      rgba(59, 174, 111, 0.5) 44.32%,
+      rgba(255, 214, 0, 0.5) 80.07%
+    );
+}
+
+.container-contacts {
+  margin: 26px 32px 0px;
+}
+
+.container-contacts .section-description {
+  font-size: 18px;
+}
+
+.footer-social .section-title {
+  display: none;
+}
+
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-links a img {
+  width: 36px;
+  height: 36px;
+  margin-top: 32px;
+}
+
+.footer-social-links a:not(:first-child) {
+  margin-left: 20px;
+}
+
+.page-copyright {
+  margin: 8px 0px 4px 0px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .footer-social .section-title {
+    display: block;
+  }
+
+  .container-contacts-and-socials {
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .main-banner {
+    min-height: 600px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container-about-us .section-description {
+    width: 50%;
+  }
+
+  .description-what-we-are {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .description-what-we-are div:first-child {
+    max-width: 40%;
+  }
+
+  .description-what-we-are div:last-child {
+    max-width: 40%;
+    display: table;
+  }
+
+  .description-what-we-are div:last-child p {
+    height: 100%;
+    margin: 0px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .container-why-add div:last-child {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container-why-add div:last-child p:first-child {
+    width: 40%;
+  }
+
+  .container-why-add div:last-child p:last-child {
+    width: 40%;
+  }
+
+  .container-we-are-different .section-description {
+    width: 50%;
+  }
+
+  .faq-wrapper {
+    display: flex;
+  }
+
+  .faq-wrapper div {
+    width: 33%;
+  }
+
+  .faq-wrapper div:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1300px) {
+  .page-header {
+    max-width: 1280px;
+    margin: 9px auto 0px;
+  }
+
+  .header-wrapper {
+    margin: 0px;
+  }
+
+  #align-center {
+    margin: 0px auto;
+  }
+
+  .page-footer {
+    max-width: 1280px;
+    margin: 0px auto;
+  }
+
+  .container-contacts {
+    margin: 0px;
+    margin-top: 26px;
+  }
+
+  .page-copyright {
+    margin-top: 64px;
+  }
+}
