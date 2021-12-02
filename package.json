@@ -9,7 +9,6 @@
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-prebuild": "npm install -f",
     "heroku-postbuild": "npm run build && npm run dev"
   },
   "devDependencies": {
