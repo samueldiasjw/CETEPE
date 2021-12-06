@@ -9,7 +9,7 @@
     <meta property="og:title" content="CETEPE" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cetepe.com/" />
-    <meta property="og:image" content="./img/cetepe-logo.svg" />
+    <meta property="og:image" content="./img/cetepe-logo.png" />
 
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="icon.png" />
@@ -24,15 +24,25 @@
   <body>
     <header class="page-header">
       <div class="header-wrapper">
-        <img src="./img/cetepe-logo.svg" alt="Cetepe Logo" />
-        <h1 class="header-title">CETEPE</h1>
+        <div class="logo-title">
+          <img src="./img/cetepe-logo.png" alt="Cetepe Logo" />
+          <h1 class="header-title">CETEPE</h1>
+        </div>
+
+        <nav class="navbar">
+          <a href="#about">Sobre Nós</a>
+          <a href="#whatis">O que é?</a>
+          <a href="#different">No que somos diferentes?</a>
+          <a href="#join">Porque aderir?</a>
+          <a href="#faq">F.A.Q.</a>
+        </nav>
       </div>
     </header>
 
     <main>
       <div class="main-banner"></div>
       <div id="align-center">
-        <section class="section section--about-us">
+        <section id="about" class="section section--about-us">
           <div class="container-about-us">
             <div class="section-title">
               <h3>Sobre Nós</h3>
@@ -46,7 +56,7 @@
           </div>
         </section>
 
-        <section class="section section--what-we-are">
+        <section id="whatis" class="section section--what-we-are">
           <div class="container-what-we-are">
             <div class="section-title">
               <h3>O que é o CETEPE?</h3>
@@ -75,7 +85,7 @@
           </div>
         </section>
 
-        <section class="section section--we-are-different">
+        <section id="different" class="section section--we-are-different">
           <div class="container-we-are-different">
             <div class="section-title">
               <h3>No que somos diferentes?</h3>
@@ -84,16 +94,24 @@
                 alt="No que somos diferentes img"
               />
             </div>
-            <p class="section-description">
-              A nossa aplicação tem um conceito futurista que quase não precisa
-              da interação do utilizador. No entanto queremos ainda assim dar
-              dicas e objetivos para tornar o processo de melhorar o ambiente
-              mais apelativo e didático.
-            </p>
+            <div class="wrapper-different">
+              <p class="section-description">
+                A nossa aplicação tem um conceito futurista que quase não
+                precisa da interação do utilizador. No entanto queremos ainda
+                assim dar dicas e objetivos para tornar o processo de melhorar o
+                ambiente mais apelativo e didático.
+              </p>
+              <div>
+                <img
+                  src="./img/user-interaction.svg"
+                  alt="User interaction image"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
-        <section class="section section--why-add">
+        <section id="join" class="section section--why-add">
           <div class="container-why-add">
             <div class="section-title">
               <h3>Porquê aderir à CETEPE?</h3>
@@ -111,7 +129,7 @@
           </div>
         </section>
 
-        <section class="section section--faq">
+        <section id="faq" class="section section--faq">
           <div class="container-faq">
             <div class="section-title">
               <h3>F.A.Q.</h3>
@@ -122,6 +140,9 @@
                 <p class="section-description section--faq-question">
                   O que é a Pegada Ecológica?
                 </p>
+                <div class="faq-image">
+                  <img src="./img/faq-world.svg" alt="User interaction image" />
+                </div>
                 <p class="section-description">
                   Refere-se à quantidade de terra e água que seria necessária
                   para te sustentar, tendo em conta todos os recursos materiais
@@ -132,6 +153,9 @@
                 <p class="section-description section--faq-question">
                   Como receber as recompensas?
                 </p>
+                <div class="faq-image">
+                  <img src="./img/faq-award.svg" alt="User interaction image" />
+                </div>
                 <p class="section-description">
                   Anualmente é feito o tratamento de dados dos concelhos e os
                   que obtiverem melhor desempenho são remonerados.
@@ -141,6 +165,12 @@
                 <p class="section-description section--faq-question">
                   Qual é a minha Pegada Ecológica?
                 </p>
+                <div class="faq-image">
+                  <img
+                    src="./img/faq-footprint.svg"
+                    alt="User interaction image"
+                  />
+                </div>
                 <p class="section-description">
                   A CETEPE contém uma calculadora que te ajudará a perceber a
                   quantidade que consomes do nosso planeta.
@@ -193,5 +223,7 @@
         <p class="page-copyright">Copyright © Moocados</p>
       </div>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
